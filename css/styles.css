@@ -865,6 +865,7 @@ text-align: left;
           border: 1px solid rgba(33, 33, 33, 0.2);
           box-sizing: border-box;
           border-radius: 4px;
+          resize: none;
         }
         .form__field-checkbox{
           display: flex;
@@ -890,9 +891,7 @@ text-align: left;
           line-height: 1.71;
           letter-spacing: 0.03em;
           color: #757575};
-          .form__btn .button-main{
-          display: block;
-          margin: 0 auto;
+          .form__btn .button-main{          
           padding: 10px 52px;}
           .form__input-checkbox:checked + .form__checkbox-icon {
             background-color: #2196f3;
@@ -900,9 +899,10 @@ text-align: left;
             background-position: center;
             background-origin: border-box;
             border-color: #2196f3;}
-            .footer__form .js-speaker-form{
-              display: flex;
-            }
+
+.footer__form {
+  display: flex;  
+}
             .footer__input-email{
                 padding: 14px 16px;
                 margin-right: 12px;
@@ -921,20 +921,18 @@ text-align: left;
               border-color: #2196F3;
             }
 
-.button-main {
+.footer__form .button-main {
   display: inline-flex;
   align-items: center;
 }
 
 .footer__form .button-main::after{
-  content: '';
-  display: inline-flex;
+  content: '';  
   width: 24px;
   height: 24px;
   margin-left: 10px;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z' fill='%23fff'/%3E%3C/svg%3E");
-  background-size: cover;
-  background-position: center;
+  
 }
             .form-word, 
             .form-textarea {   

@@ -674,7 +674,8 @@ text-align: left;
         opacity: 1;
         visibility: visible;       
         background: rgba(0, 0, 0, 0.2);
-        transition: opacity var(--timing-function);
+        transition: opacity var(--timing-function),
+        visibility var(--timing-function);
       }
 
       .is-hidden{
@@ -693,7 +694,8 @@ text-align: left;
         padding: 40px;
         background-color: #FFFFFF;
         border-radius: 4px;
-        transform: translate(-50%, -50%);        
+        transform: translate(-50%, -50%);      
+        transition: transform var(--timing-function);
       }
       
       .modal-close{
@@ -708,7 +710,12 @@ text-align: left;
         border-radius: 50%;
         background-color: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        transition: var(--timing-function);
+        transition: fill var(--timing-function);
+      }
+
+      .modal-close:hover,
+      .modal-close:focus {
+        fill: var(--accent-color);
       }
 
       .icon-cls {
